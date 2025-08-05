@@ -143,3 +143,15 @@ a:hover, a:focus, a:active, a:visited:hover {
 .site-nav a:hover, .site-nav a:focus, .site-nav a:active {
     color: #000000 !important; /* Keep black on hover */
 }
+
+/*
+ * Anchor scroll behavior for direct links to articles
+ */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure anchor targets are positioned correctly with fixed header */
+.post[id] {
+    scroll-margin-top: 100px; /* Adjust based on your header height */
+}
